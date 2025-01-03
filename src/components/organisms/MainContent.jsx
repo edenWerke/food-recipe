@@ -536,7 +536,7 @@ const MainContent = () => {
                 />
               </div>
 </main>
-<div className="bg-red-300 p-14 mt-40 w-fu">
+<div className="bg-teal-200 p-14 mt-40 w-fu">
   <div className="container mx-auto text-center">
     <p className="mb-4 font-semibold font-mono text-lg">
       Yeni Çıkan Tariflerimizden Haberdar Olmak İçin
@@ -544,12 +544,26 @@ const MainContent = () => {
     <div className="flex justify-center gap-4">
       
       <Button
-        label="Instagram'da Takip"
+        
+         label={
+          <>
+            <FaInstagram
+         className="text-2xl  inline-block mr-2"
+        
+       />
+            Instagram'da Takip
+          </>
+        }
         onClick={() => window.open('https://instagram.com', '_blank')}
         className="bg-white text-black rounded-md"
       />
       <Button
-        label="YouTube'da Takip"
+         label={
+          <>
+            <FaYoutube className="text-2xl text-red-600 inline-block mr-2" />
+            YouTube'da Takip
+          </>
+        }
         onClick={() => window.open('https://youtube.com', '_blank')}
         className="bg-white text-black rounded-md"
       />
