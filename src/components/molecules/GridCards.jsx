@@ -66,7 +66,7 @@ const GridCards = () => {
       ];
     
   return (
-    <div> <main className="py-12 ">
+    <div> <div className="py-12 ">
     <div className="container px-6 mx-auto mt-20">
       {eventData.map((event, eventIndex) => (
         <div key={eventIndex}>
@@ -98,7 +98,7 @@ const GridCards = () => {
         </div>
       ))}
     </div>
-  </main></div>
+  </div></div>
   )
 }
 
